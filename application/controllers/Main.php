@@ -20,9 +20,10 @@ class Main extends CI_Controller {
 	 */
 	public function index()
 	{
-	    $this->load->view('vHTMLHead');
+	    $this->load->view('vHTMLHead', ['load_ace' => true]);
 	    $this->load->view('vNavbar');
 	    $this->load->view('vMain');
+	    $this->load->view('vFrameInfo');
 	    $this->load->view('vHTMLFoot');
 	}
 }

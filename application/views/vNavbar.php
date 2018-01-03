@@ -9,18 +9,25 @@
 			
 			<div class="dropdown-menu" aria-labelledby="mnuFileDropdown">
 				<a class="dropdown-item app-handler" id="mnuFileNew" href="#">
-					<?=insert_icon('new-message')?> 
 					<?=lang('app_file_new')?>
 				</a>
-				<a class="dropdown-item app-handler" id="mnuFileOpen" href="#">
-					<?=insert_icon('folder')?> 
-					<?=lang('app_file_open')?>
-				</a>
 				<a class="dropdown-item app-handler" id="mnuFileSave" href="#">
-					<?=insert_icon('save')?> 
 					<?=lang('app_file_save')?>
 				</a>
+				<a class="dropdown-item app-handler" id="mnuFileSaveAs" href="#">
+					<?=lang('app_file_save_as')?>
+				</a>
+				<div class="divider"></div>
+				<a class="dropdown-item app-handler" id="mnuFileRemove" href="#">
+					<?=lang('app_file_remove')?>
+				</a>
 			</div>
+		</li>
+		<li class="nav-item" style="margin-left: 50px;">
+			<span class="nav-link re-file-changed" onclick="return false"></span>
+		</li>
+		<li class="nav-item" style="">
+			<a class="nav-link re-curr-path" href="#" onclick="return false">/</a>
 		</li>
 	</ul>
 	
